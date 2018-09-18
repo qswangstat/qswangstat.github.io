@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://qswangstat.github.io/"/>
   <updated>2018-09-17T08:10:24.774Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://qswangstat.github.io/</id>
   
   <author>
     <name>Qingsong Wang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/09/17/hello-world/"/>
-    <id>http://yoursite.com/2018/09/17/hello-world/</id>
+    <link href="https://qswangstat.github.io/2018/09/17/hello-world/"/>
+    <id>https://qswangstat.github.io/2018/09/17/hello-world/</id>
     <published>2018-09-17T06:58:02.592Z</published>
     <updated>2018-09-17T08:10:24.774Z</updated>
     
@@ -34,10 +34,10 @@
     
     </summary>
     
-      <category term="introduction" scheme="http://yoursite.com/categories/introduction/"/>
+      <category term="introduction" scheme="https://qswangstat.github.io/categories/introduction/"/>
     
     
-      <category term="tutorial" scheme="http://yoursite.com/tags/tutorial/"/>
+      <category term="tutorial" scheme="https://qswangstat.github.io/tags/tutorial/"/>
     
   </entry>
   
