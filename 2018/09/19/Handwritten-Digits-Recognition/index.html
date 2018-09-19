@@ -109,16 +109,28 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
 
 
-  <meta name="description" content="In data we trust.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Joy in Statitics">
-<meta property="og:url" content="https://qswangstat.github.io/index.html">
+  <meta name="description" content="Statistical methods are widely used in image recognition or classification nowadays and can produce pretty satisfying results. MNIST database is a large public database of handwritten digits that is c">
+<meta name="keywords" content="machine learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Handwritten Digits Recognition">
+<meta property="og:url" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/index.html">
 <meta property="og:site_name" content="Joy in Statitics">
-<meta property="og:description" content="In data we trust.">
+<meta property="og:description" content="Statistical methods are widely used in image recognition or classification nowadays and can produce pretty satisfying results. MNIST database is a large public database of handwritten digits that is c">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/1.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/1_2.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/2.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/3.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/4.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/4_2.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/5.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/5_2.jpg">
+<meta property="og:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/6.jpg">
+<meta property="og:updated_time" content="2018-09-19T01:48:14.877Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Joy in Statitics">
-<meta name="twitter:description" content="In data we trust.">
+<meta name="twitter:title" content="Handwritten Digits Recognition">
+<meta name="twitter:description" content="Statistical methods are widely used in image recognition or classification nowadays and can produce pretty satisfying results. MNIST database is a large public database of handwritten digits that is c">
+<meta name="twitter:image" content="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/1.jpg">
 
 
 
@@ -127,7 +139,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
 
 
-  <link rel="canonical" href="https://qswangstat.github.io/"/>
+  <link rel="canonical" href="https://qswangstat.github.io/2018/09/19/Handwritten-Digits-Recognition/"/>
 
 
 
@@ -137,7 +149,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
   };
 </script>
 
-  <title>Joy in Statitics</title>
+  <title>Handwritten Digits Recognition | Joy in Statitics</title>
   
 
 
@@ -184,8 +196,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -222,7 +233,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
   </li>
@@ -298,9 +309,9 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -332,11 +343,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/19/Handwritten-Digits-Recognition/" itemprop="url">
-                  Handwritten Digits Recognition
-                </a>
+          <h1 class="post-title" itemprop="name headline">Handwritten Digits Recognition
               
             
           </h1>
@@ -399,6 +406,14 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -417,9 +432,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
       
 
       
-        
-          
-            <p>Statistical methods are widely used in image recognition or classification nowadays and can produce pretty satisfying results. MNIST database is a large public database of handwritten digits that is commonly used for training and testing recognizers or classifiers based on various statistical models. In this paper, several models- including discriminant analysis, k-nearest neighbor, kernel SVM, random forests, and neural networks- are described theoretically and then applied to this database. PCA helps to reduce data dimension in some cases. Testing error rates of all models are compared.<br><strong>Keywords:</strong> Statistical Learning, MNIST, Dimension Reduction, PCA, Discriminant Analysis, K-nearest Neighbor, Kernel SVM, Random Forests, Neural Network, Deep Learning, Testing Error Rate.</p>
+        <p>Statistical methods are widely used in image recognition or classification nowadays and can produce pretty satisfying results. MNIST database is a large public database of handwritten digits that is commonly used for training and testing recognizers or classifiers based on various statistical models. In this paper, several models- including discriminant analysis, k-nearest neighbor, kernel SVM, random forests, and neural networks- are described theoretically and then applied to this database. PCA helps to reduce data dimension in some cases. Testing error rates of all models are compared.<br><strong>Keywords:</strong> Statistical Learning, MNIST, Dimension Reduction, PCA, Discriminant Analysis, K-nearest Neighbor, Kernel SVM, Random Forests, Neural Network, Deep Learning, Testing Error Rate.</p>
 <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;MNIST is a handwritten digits image data set created by Yann LeCun. Each image is $28$ pixels in height and $28$ pixels in width i.e. $784$ pixels in total, so is represented as a vector in $784-D$ space. The training dataset includes $60000$ images, while the testing dataset $10000$ images.  </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Our goal is to train different classifiers with training dataset and then use trained classifiers to recognize handwritten digits from testing dataset as accurately as possible.  </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp; From the MNIST dataset, we can obtain large data matrix. The first column is the label of each image. The input pixels in the rest columns are greyscale value, with a value of $0.0$ representing white, a value of $1.0$ representing black, and values in $[0.0,1.0]$ representing gradually darkening shades of grey. To locate a specific pixel on the image, suppose that we have decomposed $x$ as $x = i * 28 + j$, where $i$ and $j$ are integers between $0$ and $27$, inclusive. Then pixel $x$ is located on row $i$ and column $j$ of a $28\times28$ matrix, (indexing by zero). Images can be restored as the following figure (1) shows.  </p>
@@ -462,8 +475,6 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 </table>
 <h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>[1] Hastie T, Tibshirani R, Friedman J. The Elements of Statistical Learning[M]// The elements of statistical learning :. Springer, 2003:192-192.<br>[2] James G, Witten D, Hastie T, et al. An Introduction to Statistical Learning[M]. Springer New York, 2013.<br>[3] Lecun Y, Bottou L, Bengio Y, et al. Gradient-based learning applied to document recognition[J]. Proceedings of the IEEE, 1998, 86(11):2278-2324.</p>
 
-          
-        
       
     </div>
 
@@ -481,14 +492,20 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/machine-learning/" rel="tag"><i class="fa fa-tag"></i> machine learning</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -498,14 +515,15 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -526,8 +544,17 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -633,6 +660,22 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">2.</span> <span class="nav-text">References</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -796,6 +839,10 @@ Total Views:<span id="busuanzi_value_site_uv"></span><span class="post-meta-divi
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
